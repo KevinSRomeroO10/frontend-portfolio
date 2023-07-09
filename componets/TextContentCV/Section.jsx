@@ -1,16 +1,48 @@
+'use client'
+
+import { useState } from 'react';
 import './Section.scss'
 
-const Section = ( { title, text } ) => {
+const Section = ( {Sections} ) => {
     
-  return (
-    <section className='section'>
-      <h2>{ title }</h2>
-      
-      <br/>
-      <hr/>
-      <br/>
+  const [currentPage, setCurrentPage] = useState(1);
 
-      <p>{ text }</p>
+  const handleClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  return (
+    <section className='paginated-div'>
+
+      <div className="pagination">
+        {Sections.map((section) => (
+          <button
+            key={section.id}
+            className={`page-button ${section.id === currentPage ? 'active' : ''}`}
+            onClick={() => handleClick(section.id)}
+          >
+            {section.id}
+          </button>
+        ))}
+      </div>
+
+      <div className="content">
+        
+        {Sections.map((section) => (
+
+          <div key={section.id} className={`page ${section.id === currentPage ? 'active' : ''}`}>
+            <h2>{ section.title }</h2>
+            
+            <br/>
+            <hr/>
+            <br/>
+
+            <p>{ section.text }</p>
+          </div>
+
+        ))}
+
+      </div>
     </section>
   )
 

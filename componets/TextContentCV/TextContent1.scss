@@ -2,7 +2,7 @@
 
 .TextContent1{
   background: $bg3;
-  padding: 15px;
+  padding: 50px;
   border-radius: 5px;
   grid-row: 1;
   grid-column: 1/2;
@@ -10,7 +10,7 @@
 
 @media (max-width: 800px) {
   .TextContent2{
-    width: 85vw;
+    width: 75vw;
     grid-column: 1/4;
   }  
 }

@@ -11,15 +11,7 @@ const Index = ( {Sections} ) => {
 
       <TextContent1/>
 
-      <TextContent2 section={ 
-        Sections.map((section, index) => (
-          <Section 
-            title={section.title} 
-            text={section.text}
-            key={index}
-          /> 
-        ))
-      }/>
+      <TextContent2 section={ <Section Sections = {Sections} /> }/>
 
     </section>
   )
