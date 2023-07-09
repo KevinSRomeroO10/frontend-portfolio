@@ -28,13 +28,21 @@
   place-items: center;
 }
 
-.imgIndex{
+.description{
   float: right;
   display: grid;
   place-items: center;
 }
 
-.presentation, .imgIndex{
+.description p{
+  width: 70%;
+}
+
+.description h1{
+  text-align: center;
+}
+
+.presentation, .description{
   width: 50vw;
   height: 100vh;
 }

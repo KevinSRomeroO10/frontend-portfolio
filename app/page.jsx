@@ -19,8 +19,13 @@ const Home = () => {
         </div>
       </section> 
 
-      <section className='imgIndex'>
-        <p>¡Imagen de mi!</p>
+      <section className='description'>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptatum fuga officiis ducimus omnis laborum cum atque 
+              ipsum rerum consequuntur laboriosam velit aspernatur aliquam, 
+              nobis dolorum eveniet deleniti vel blanditiis sunt.
+          </p>
       </section>
 
     </main>

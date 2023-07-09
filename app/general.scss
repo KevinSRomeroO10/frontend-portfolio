@@ -1,13 +1,16 @@
 // Importar Fuentes
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poltawski+Nowy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-// Aplicando las Fuentes
-$fontLetters: 'Poltawski Nowy', serif; // Amatic SC /400 regular/ /Bold 700/
-
-@mixin fontTittles{
-  font-family: 'Amatic SC', cursive; // Poltawski Nowy /400 regular & italic/ /700 bold & italic/;
+@mixin fontTittles1{
+  font-family: 'Amatic SC'; // Poltawski Nowy /400 regular & italic/ /700 bold & italic/;
   font-style: italic;
   font-weight: 700;
+}
+
+@mixin fontTittles2{
+  font-family: 'Amatic SC', cursive; // Poltawski Nowy /400 regular & italic/ /700 bold & italic/;
+  font-style: normal;
+  font-weight: 400;
 }
 
 // Colores principales
@@ -16,18 +19,12 @@ $purple: #720D5D;
 
 // Paleta de colores oscuro
 $bg1: #1A1C2C;  // Azul oscuro
-$bg2: #2C1A1A;  // Rojo oscuro
-$bg3: #2C1A2C;  // Morado Oscuro
-$bg4: #181a1b;
-$bg5: #212425;
-
-$grey1: #595959;
-$grey2: #979797;
-$grey3: #808080;
-
-// Contraste de la letra
-$colorLetters: #FFFFFF;
-
+$bg2: #191B24;  // Morado Oscuro
+$bg3: #181a1b;
+$bg4: #212425;
+$bg5: #595959;
+$bg6: #979797;
+$bg7: #2C1A2C;
 
 *{
   margin: 0;
@@ -40,9 +37,10 @@ body{
 }
 
 h1, h2, h3{
-  @include fontTittles;
+  @include fontTittles1;
 }
 
 p{
-  font-family: $fontLetters;
+  font-family: 'Poltawski Nowy', serif;
+  font-weight: 700;
 }
