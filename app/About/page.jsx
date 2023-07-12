@@ -17,7 +17,7 @@ const CV = () => {
   return(
     <>
       
-      <Navbar button={
+      <Navbar buttons={
         Buttons.map((button, index) => (
           <Button1 
             text={button.text} 

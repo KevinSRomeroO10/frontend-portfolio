@@ -1,10 +1,10 @@
 import './Navbar.scss'
 
-const Navbar = ( { button } ) => {
+const Navbar = ( { buttons } ) => {
     
   return (
     <nav className='navbar'>
-      { button }
+      { buttons }
     </nav>
   )
 

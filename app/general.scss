@@ -13,14 +13,20 @@
   font-weight: 400;
 }
 
+@mixin pararfos{
+  font-family: 'Poltawski Nowy', serif;
+  font-weight: 700;
+}
+
+
 // Colores principales
 $red: #A81212;
 $purple: #720D5D;
 
 // Paleta de colores oscuro
 $bg1: #1A1C2C;  // Azul oscuro
-$bg2: #191B24;  // Morado Oscuro
-$bg3: #181a1b;
+$bg2: #181a1b;  // Gris Oscuro
+$bg3: #191B24;  // Morado Oscuro
 $bg4: #212425;
 $bg5: #595959;
 $bg6: #979797;
@@ -33,14 +39,17 @@ $bg7: #2C1A2C;
 }
 
 body{
-  background: $bg1;
+  background-color: $bg1;
+  background-image:  radial-gradient(white 1.5px, transparent 1.5px), radial-gradient(white 1.5px, $bg1 1.5px);
+  background-size: 60px 60px;
+  background-position: 0 0,30px 30px;
 }
+
 
 h1, h2, h3{
   @include fontTittles1;
 }
 
 p{
-  font-family: 'Poltawski Nowy', serif;
-  font-weight: 700;
+  @include pararfos;
 }

@@ -10,6 +10,8 @@ const Home = () => {
 
   return (
     <main className='container'>
+      
+      <div className='magicpattern'></div>
 
       <section className="presentation">
         <div className='hs'>
